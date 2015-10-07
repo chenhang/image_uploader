@@ -3,6 +3,7 @@
 <p>
   <strong>Title:</strong>
   <%= @pic.title %>
+  <%= image_tag @pic.photo.url %>
 </p>
 
 <%= link_to 'Edit', edit_pic_path(@pic) %> |
