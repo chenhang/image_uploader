@@ -25,7 +25,7 @@ class PicsController < ApplicationController
   # POST /pics.json
   def create
     @pic = Pic.new(pic_params)
-
+    p @pic
     respond_to do |format|
       if @pic.save
         format.html { redirect_to @pic, notice: 'Pic was successfully created.' }
